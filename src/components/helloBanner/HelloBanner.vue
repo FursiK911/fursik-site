@@ -11,7 +11,7 @@
         <v-row class="fill-height" align="center" justify="center">
           <v-col cols="auto">
             <h1 class="hello-banner__title">Hi, i`m Dmitry Fursov</h1>
-            <p class="hello-banner__subtitle">Developer</p>
+            <p class="hello-banner__subtitle">Frontend Developer</p>
           </v-col>
         </v-row>
       </v-parallax>
@@ -38,9 +38,9 @@ export default {
 .hello-banner__subtitle {
   color: #fff;
   margin: 0 0 25px;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.7;
-  font-family: "Roboto Slab", serif;
   font-weight: 300;
+  text-align: center;
 }
 </style>

@@ -79,7 +79,7 @@ export default {
 }
 .header--collapsed {
   background-color: black;
-  padding: 8px 0px;
+  padding: 4px 0px;
   transition: background-color 0.4s, padding 1s;
 }
 .header__title {
@@ -96,6 +96,7 @@ export default {
   cursor: pointer;
   text-transform: uppercase;
   transition: color 0.3s;
+  letter-spacing: 1px;
 }
 .header__subtitle__text:hover {
   color: #e0e0e0;
