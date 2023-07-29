@@ -3,14 +3,20 @@
     <v-row
       :class="isScrollDown ? 'header--collapsed' : 'header--idle'"
       align="center"
+      justify="space-between"
       no-gutters
     >
-      <v-col class="pl-10" cols="6">
-        <h1 class="header__title">Dmitry Fursov</h1>
+      <v-col class="pl-10" cols="auto">
+        <h1 class="header__title">{{ $t("myName") }}</h1>
       </v-col>
-      <v-col class="pr-6" cols="6">
-        <v-row align="center" justify="center" no-gutters>
-          <v-col v-for="(item, index) in headerItems" :key="index" cols="3">
+      <v-col class="pr-6" cols="auto">
+        <v-row align="center" justify="space-between" wrap="false" no-gutters>
+          <v-col
+            class="px-2"
+            v-for="(item, index) in headerItems"
+            :key="index"
+            cols="auto"
+          >
             <v-row
               class="header__subtitle header__subtitle--inactive"
               justify="center"
@@ -18,6 +24,13 @@
             >
               <span class="header__subtitle__text">{{ item.text }}</span>
             </v-row>
+          </v-col>
+          <v-col cols="auto">
+            <v-breadcrumbs :items="languages">
+              <template v-slot:title="{ item }">
+                <span class="header__language-item">{{ item.language.toUpperCase() }}</span>
+              </template>
+            </v-breadcrumbs>
           </v-col>
         </v-row>
       </v-col>
@@ -48,6 +61,16 @@ export default {
       },
     ],
     isScrollDown: false,
+    languages: [
+      {
+        language: "ru",
+        disabled: false,
+      },
+      {
+        language: "en",
+        disabled: false,
+      },
+    ],
   }),
   created() {
     window.addEventListener("scroll", this.handleScroll);
@@ -61,6 +84,10 @@ export default {
     handleScroll(event) {
       console.log(window.scrollY);
       this.isScrollDown = window.scrollY > 1;
+    },
+    // Метод для переключения языков
+    toggleLanguage() {
+      this.$i18n.locale = this.$i18n.locale === "en" ? "ru" : "en";
     },
   },
 };
@@ -109,5 +136,8 @@ export default {
 }
 .header__subtitle--inactive {
   background-color: transparent;
+}
+.header__language-item {
+  color: white;
 }
 </style>
