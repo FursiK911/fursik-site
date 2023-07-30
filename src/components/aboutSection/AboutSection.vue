@@ -29,14 +29,27 @@
         <v-col cols="auto">
           <v-row
             class="about-section__banner about-section__max-width pa-5"
+            justify="center"
             no-gutters
           >
             <v-col cols="auto">
-              <h3>{{ $t("aboutMeShortTitle") }}</h3>
-              <v-row>
-                <v-col>
-                  <v-icon icon="mdi-keyboard-outline" size="64"></v-icon>
-                  <h5>Web developer</h5>
+              <v-row justify="center">
+                <v-col cols="auto">
+                  <h3>{{ $t("aboutMeShortTitle") }}</h3>
+                </v-col>
+              </v-row>
+              <v-row justify="space-between">
+                <v-col class="px-6"  v-for="item in icons">
+                  <v-row justify="center" no-gutters>
+                    <v-col cols="auto">
+                      <v-icon :icon="item.icon" size="64"></v-icon>
+                    </v-col>
+                  </v-row>
+                  <v-row justify="center" no-gutters>
+                    <v-col cols="auto">
+                      <h5 class="about-section__description">{{ item.description }}</h5>
+                    </v-col>
+                  </v-row>
                 </v-col>
               </v-row>
             </v-col>
@@ -51,7 +64,20 @@
 export default {
   name: "AboutSection",
   data: () => ({
-    
+    icons: [
+      {
+        icon: "mdi-keyboard-outline",
+        description: "WEB DEVELOPER",
+      },
+      {
+        icon: "mdi-keyboard-outline",
+        description: "WEB DEVELOPER",
+      },
+      {
+        icon: "mdi-controller",
+        description: "Gamer",
+      },
+    ],
   }),
 };
 </script>
@@ -71,5 +97,8 @@ export default {
 }
 .about-section__max-width {
   max-width: 500px;
+}
+.about-section__description{
+  text-align: center;
 }
 </style>

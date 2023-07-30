@@ -79,7 +79,6 @@ export default {
   }),
   created() {
     window.addEventListener("scroll", this.handleScroll);
-    console.log(window.scrollY);
     this.isScrollDown = window.scrollY > 1;
   },
   unmounted() {
@@ -87,11 +86,9 @@ export default {
   },
   methods: {
     handleScroll(event) {
-      console.log(window.scrollY);
       this.isScrollDown = window.scrollY > 1;
     },
     changeLanguage(lang) {
-      console.log(lang);
       this.$i18n.locale = lang;
     },
   },

@@ -13,6 +13,14 @@ const messages = {
     aboutMePart3Text:
       "Thank you for visiting my page. I hope you have learned a little more about me!",
     aboutMeShortTitle: "TL;DR?  SELF PROCLAMATIONS:",
+    passionTitle: "What i do",
+    passionPart1Title: "Development",
+    passionPart1Description:
+      "With a strong foundation in computer science, I'm passionate about web design and development, and interested in mobile app development. As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create beautiful software.",
+    experienceTitle: "EXPERIENCE",
+    experienceSubtitle: "I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast paced industry.",
+    experienceTechnology: "SOME TECHNOLOGIES I'VE WORKED WITH:",
+    experienceWork: "WHERE I'VE WORKED:",
   },
   ru: {
     myName: "Дмитрий Фурсов",
@@ -26,6 +34,14 @@ const messages = {
     aboutMePart3Text:
       "Благодарю за визит на мою страницу. Я надеюсь, что вы узнали обо мне немного больше!",
     aboutMeShortTitle: "Резюмируя:",
+    passionTitle: "Чем я занимаюсь",
+    passionPart1Title: "Development",
+    passionPart1Description:
+      "With a strong foundation in computer science, I'm passionate about web design and development, and interested in mobile app development. As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create beautiful software.",
+    experienceTitle: "Опыт",
+    experienceSubtitle: "I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast paced industry.",
+    experienceTechnology: "ТЕХНОЛОГИИ, С КОТОРЫМИ Я РАБОТАЛ:",
+    experienceWork: "WHERE I'VE WORKED:",
   },
 };
 
