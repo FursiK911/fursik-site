@@ -3,7 +3,7 @@
     <v-col>
       <v-row class="mb-4" justify="center" no-gutters>
         <v-col cols="auto">
-          <h1>A LITTLE BIT ABOUT ME</h1>
+          <h1>{{ $t("aboutMeTitle") }}</h1>
         </v-col>
       </v-row>
       <v-row class="mb-4" justify="center" no-gutters>
@@ -12,22 +12,35 @@
         </v-col>
       </v-row>
       <v-row class="mb-4" justify="center" no-gutters>
-        <v-col cols="4">
-          <p class="about-section__text mb-4">
-            Hey! My name is Dmitry Fursov. I graduated from
-            <a href="http://donnu.ru/" target="_blank">Donetsk State University</a> with a
-            master's degree in <a href="http://donnu.ru/phys/prep" target="_blank">Computer Science and Information Technology</a>.
-            Programming is my passion and calling. I aspire to build a
-            successful career in the IT industry, and every day, I find joy in
-            the opportunity to create and bring ideas to life through code. In
-            my free time, I enjoy playing computer games, maintaining an active
-            lifestyle through sports, and taking leisurely walks outdoors,
-            savoring the beauty of the surrounding world.
+        <v-col cols="auto">
+          <p class="about-section__text about-section__max-width mb-4">
+            {{ $t("aboutMePart1Text") }}
+            <a href="http://donnu.ru/" target="_blank">{{
+              $t("myUniversity")
+            }}</a>
+            {{ $t("aboutMePart2Text") }}
           </p>
-          <p class="about-section__text">
-            Thank you for visiting my page. I hope you have learned a little
-            more about me!
+          <p class="about-section__text about-section__max-width">
+            {{ $t("aboutMePart3Text") }}
           </p>
+        </v-col>
+      </v-row>
+      <v-row justify="center" no-gutters>
+        <v-col cols="auto">
+          <v-row
+            class="about-section__banner about-section__max-width pa-5"
+            no-gutters
+          >
+            <v-col cols="auto">
+              <h3>{{ $t("aboutMeShortTitle") }}</h3>
+              <v-row>
+                <v-col>
+                  <v-icon icon="mdi-keyboard-outline" size="64"></v-icon>
+                  <h5>Web developer</h5>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-col>
@@ -37,6 +50,9 @@
 <script>
 export default {
   name: "AboutSection",
+  data: () => ({
+    
+  }),
 };
 </script>
 
@@ -49,5 +65,11 @@ export default {
   line-height: 1.7;
   font-weight: 300;
   text-align: center;
+}
+.about-section__banner {
+  background: #f0f0f0;
+}
+.about-section__max-width {
+  max-width: 500px;
 }
 </style>

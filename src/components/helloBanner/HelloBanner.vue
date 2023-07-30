@@ -10,8 +10,8 @@
         </div>-->
         <v-row class="fill-height" align="center" justify="center">
           <v-col cols="auto">
-            <h1 class="hello-banner__title">Hi, i`m Dmitry Fursov</h1>
-            <p class="hello-banner__subtitle">Frontend Developer</p>
+            <h1 class="hello-banner__title">{{$t("helloBannerTitle")}}</h1>
+            <p class="hello-banner__subtitle">{{$t("helloBannerSubtitle")}}</p>
           </v-col>
         </v-row>
       </v-parallax>

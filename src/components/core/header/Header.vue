@@ -25,10 +25,15 @@
               <span class="header__subtitle__text">{{ item.text }}</span>
             </v-row>
           </v-col>
-          <v-col cols="auto">
-            <v-breadcrumbs :items="languages">
+          <v-col class="pl-6" cols="auto">
+            <v-breadcrumbs class="header__breadcrumbs" :items="languages">
               <template v-slot:title="{ item }">
-                <span class="header__language-item">{{ item.language.toUpperCase() }}</span>
+                <span class="header__language-item" @click="() => changeLanguage(item.language)">{{
+                  item.language.toUpperCase()
+                }}</span>
+              </template>
+              <template v-slot:divider>
+                <span class="header__breadcrumbs__divider">/</span>
               </template>
             </v-breadcrumbs>
           </v-col>
@@ -85,9 +90,9 @@ export default {
       console.log(window.scrollY);
       this.isScrollDown = window.scrollY > 1;
     },
-    // Метод для переключения языков
-    toggleLanguage() {
-      this.$i18n.locale = this.$i18n.locale === "en" ? "ru" : "en";
+    changeLanguage(lang) {
+      console.log(lang);
+      this.$i18n.locale = lang;
     },
   },
 };
@@ -126,7 +131,7 @@ export default {
   letter-spacing: 1px;
 }
 .header__subtitle__text:hover {
-  color: #e0e0e0;
+  color: var(--hover-text-color);
 }
 .header__subtitle {
   height: 100%;
@@ -138,6 +143,17 @@ export default {
   background-color: transparent;
 }
 .header__language-item {
-  color: white;
+  color: var(--active-text-color);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.header__language-item--active {
+  color: var(--disable-text-color);
+}
+.header__language-item:hover {
+  color: var(--hover-text-color);
+}
+.header__breadcrumbs__divider {
+  color: var(--active-text-color);
 }
 </style>
