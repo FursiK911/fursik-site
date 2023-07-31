@@ -21,6 +21,8 @@ const messages = {
     experienceSubtitle: "I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast paced industry.",
     experienceTechnology: "SOME TECHNOLOGIES I'VE WORKED WITH:",
     experienceWork: "WHERE I'VE WORKED:",
+    checkResumeTitle: "CHECK OUT MY RÉSUMÉ!",
+    checkResumeButton: "Grab a copy!",
   },
   ru: {
     myName: "Дмитрий Фурсов",
@@ -42,6 +44,8 @@ const messages = {
     experienceSubtitle: "I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast paced industry.",
     experienceTechnology: "ТЕХНОЛОГИИ, С КОТОРЫМИ Я РАБОТАЛ:",
     experienceWork: "WHERE I'VE WORKED:",
+    checkResumeTitle: "Посмотрите на мое резюме!",
+    checkResumeButton: "Взять копию!",
   },
 };
 

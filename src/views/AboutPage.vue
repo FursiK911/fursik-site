@@ -1,8 +1,9 @@
 <script setup>
-import HelloBanner from '../components/helloBanner/HelloBanner.vue';
+import HelloBanner from "../components/helloBanner/HelloBanner.vue";
 import AboutSection from "../components/aboutSection/AboutSection.vue";
 import PassionSection from "../components/passionSection/PassionSection.vue";
 import ExperienceSection from "../components/experienceSection/ExperienceSection.vue";
+import ResumeSection from "../components/resumeSection/ResumeSection.vue";
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import ExperienceSection from "../components/experienceSection/ExperienceSection
     <AboutSection></AboutSection>
     <PassionSection></PassionSection>
     <ExperienceSection></ExperienceSection>
+    <ResumeSection></ResumeSection>
   </main>
 </template>

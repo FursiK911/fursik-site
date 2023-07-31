@@ -13,11 +13,13 @@
           </p>
         </v-col>
       </v-row>
-      <v-row justify="center">
-        <v-col cols="auto">
+      <v-row justify="center" wrap="false">
+        <v-col class="px-8" cols="5">
           <v-row no-gutters>
             <v-col cols="12">
-              <h3>{{ $t("experienceTechnology") }}</h3>
+              <h3 class="experience-section__header-title mb-4">
+                {{ $t("experienceTechnology") }}
+              </h3>
             </v-col>
           </v-row>
           <v-row justify="start" align="center">
@@ -30,8 +32,19 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="auto">
-          <h3>{{ $t("experienceWork") }}</h3>
+        <v-col cols="4">
+          <v-row no-gutters>
+            <v-col>
+              <h3 class="experience-section__header-title mb-4">
+                {{ $t("experienceWork") }}
+              </h3>
+            </v-col>
+          </v-row>
+          <v-row no-gutters>
+            <v-col>
+              <p>Freelance</p>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-col>
@@ -89,11 +102,22 @@ export default {
   width: 600px;
   text-align: center;
 }
+.experience-section__header-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
 .experience-section__technology-icon {
   max-width: 75px;
   max-height: 75px;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.experience-section__technology-icon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 </style>
