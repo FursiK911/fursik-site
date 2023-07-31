@@ -23,6 +23,8 @@ const messages = {
     experienceWork: "WHERE I'VE WORKED:",
     checkResumeTitle: "CHECK OUT MY RÉSUMÉ!",
     checkResumeButton: "Grab a copy!",
+    workSectionTitle: "WHAT I'VE DONE",
+    workSectionSubtitle: "(more coming soon)",
   },
   ru: {
     myName: "Дмитрий Фурсов",
@@ -46,6 +48,8 @@ const messages = {
     experienceWork: "WHERE I'VE WORKED:",
     checkResumeTitle: "Посмотрите на мое резюме!",
     checkResumeButton: "Взять копию!",
+    workSectionTitle: "WHAT I'VE DONE",
+    workSectionSubtitle: "(more coming soon)",
   },
 };
 
