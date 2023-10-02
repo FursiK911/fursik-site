@@ -14,31 +14,7 @@
         </v-col>
       </v-row>
       <v-row class="px-16">
-        <v-col cols="4">
-          <WorkCard></WorkCard>
-        </v-col>
-        <v-col cols="4">
-          <WorkCard></WorkCard>
-        </v-col>
-        <v-col cols="4">
-          <WorkCard></WorkCard>
-        </v-col>
-        <v-col cols="4">
-          <WorkCard></WorkCard>
-        </v-col>
-        <v-col cols="4">
-          <WorkCard></WorkCard>
-        </v-col>
-        <v-col cols="4">
-          <WorkCard></WorkCard>
-        </v-col>
-        <v-col cols="4">
-          <WorkCard></WorkCard>
-        </v-col>
-        <v-col cols="4">
-          <WorkCard></WorkCard>
-        </v-col>
-        <v-col cols="4">
+        <v-col v-for="count in 12" cols="4">
           <WorkCard></WorkCard>
         </v-col>
       </v-row>

@@ -25,6 +25,9 @@ const messages = {
     checkResumeButton: "Grab a copy!",
     workSectionTitle: "WHAT I'VE DONE",
     workSectionSubtitle: "(more coming soon)",
+    contactSectionTitle: "GET IN TOUCH!",
+    contactSectionSubtitle: "Whether you have an idea for a project or just want to chat, feel free to shoot me an email!",
+    contactSectionButton: "Say Hello!",
   },
   ru: {
     myName: "Дмитрий Фурсов",
@@ -50,6 +53,9 @@ const messages = {
     checkResumeButton: "Взять копию!",
     workSectionTitle: "WHAT I'VE DONE",
     workSectionSubtitle: "(more coming soon)",
+    contactSectionTitle: "СВЯЖИТЕСЬ СО МНОЙ!",
+    contactSectionSubtitle: "Независимо от того, есть ли у вас идея для проекта или вы просто хотите пообщаться, не стесняйтесь, напишите мне по электронной почте!",
+    contactSectionButton: "Поприветствовать!",
   },
 };
 
